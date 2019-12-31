@@ -8,7 +8,7 @@ cd "$(dirname $0)"
 git -C .state pull origin master
 
 if [ -f ".state/lock" ] ; then
-  echo "ERR: terraform state is locked" >&2
+  echo "ERR: terraform state is locked (see https://err.li/tf.sh/state-is-locked)" >&2
   exit 1
 fi
 
